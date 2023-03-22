@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Documentation | Demo</title>
+  <title> Tutorials | Demo</title>
   <meta name="description" content="A showcase of Simply Docs by MarketingPipeline built using Simple.CSS">
 
   <link rel="stylesheet" href="./../assets/style.css">
@@ -58,8 +58,8 @@
 
   </nav>
 
-  <h1>Documentation</h1>
-  <p>Documentation for Demo app.</p>
+  <h1>Tutorials</h1>
+  <p>Detailed tutorials for our anotation tools.</p>
 </header>
 
 
@@ -74,20 +74,19 @@
 
 
     <ul>
-      <li><a href="#about"><b>API Routes</a></b>
+      <li><a href="#about1"><b>Initial Tool</a></b>
         <ul>
-          <li><a href="#api_route_1">API Route: Hello World</a></li>
-          <li><a href="#api_route_2">API Route: Foo Bar</a></li>
-          <li><a href="#about">I'm a hyperlink</a></li>
+          <li><a href="#info_1">The Data</a></li>
+          <li><a href="#info_2">Creating and Using the annotation portal</a></li>
+          <li><a href="#tut_1">Video Tutorial for using the tool</a></li>
         </ul>
-
     </ul>
     <ul>
-      <li><a href="#about2"><b>Code Snippets</a></b>
+      <li><a href="#about2"><b>Classwise Annotation Tool</a></b>
         <ul>
-          <li><a href="#markdown_example">Markdown Post Example</a></li>
-          <li><a href="#syntax_highlighting">Syntax Highlighting</a></li>
-          <li><a href="#about">I'm a hyperlink</a></li>
+          <li><a href="#info_3">Setting up the tool</a></li>
+          <li><a href="#info_4">Working with the tool</a></li>
+          <li><a href="#tut_2">Video Tutorial for using the tool</a></li>
         </ul>
 
 
@@ -97,68 +96,133 @@
 
 
   <article>
-    <h1 id="about">API Routes</h1>
+    <h1 id="about1">Initial Tool</h1>
+    <h3 id="info_1">The Data</h3>
     <p>
-      Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud <em>exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat</em>. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, <mark>SUPER IMPORTANT</mark>
+      The data consists of video frames where the subjects (children) are recorded trying to touch and feel different
+      solid shapes, using hand gestures. The task is to identify the start and end frames of a single attempt by the
+      subject (shot). The activity may be repeated several times for identifying a single shape (trial), using different
+      strategies each time. The following schematic helps to understand our usage of the terms "shot" and "trial".
     </p>
-    <h3>Get Hello World</h3>
-    <br>
-    <kbd id="api_route_1">GET /HelloWorld</kbd>
-    <br>
-    <h3>Get Foo Bar</h3>
-    <br>
-    <kbd id="api_route_2">GET /FooBar</kbd>
+    <center><img src="./../assets/images/video_anatomy.gif" height="" width="" alt="This is a random image caption.">
+    </center>
 
+    <h3 id="info_2">Creating the annotation portal</h3>
+    <p>
+    <ul>
+      <li>Random point 1</li>
+      <li>Random point 2</li>
+      <li>Random point 3</li>
+      <li>Random point 4</li>
+    </ul>
     </p>
+
+    <h3 id="tut_1">Video Tutorial for using the tool</h3>
+    <p>We have presented a video tutorial for easier understanding of the usage of the tool.</p>
+    <p>Shoutout to <a href="https://ruxie189.github.io/" target="_blank" rel="noopener noreferrer">Rukhshanda
+        Hussain</a> for the amazing tutorial!</p>
+    <center>
+      <video controls>
+        <source src="./../assets/images/shot_detect_tool.mp4" type="video/mp4">
+      </video>
+    </center>
+
   </article>
   <footer>
   </footer>
 
   <article>
-    <h1 id="about2">Code Snippets</h1>
+    <h1 id="about2">Classwise Annotation Tool</h1>
     <p>
-      Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud <em>exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat</em>. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, <mark>sunt in culpa qui officia deserunt mollit anim id est laborum.</mark>
+      We have developed a Google Colab based shot annotation tool for the task of hand gesture annotations. While the
+      application is highly specific to the UMB Hand Videos, the tool and the data setup can be easily modified for use
+      in other kinds of video data. The tool can be found <a
+        href="https://colab.research.google.com/drive/1dHl6qAFwzoWySEryXq49M7f--glJWH53?usp=sharing" target="_blank"
+        rel="noopener noreferrer">here</a>.
     </p>
 
-    <blockquote>
-      <p class="test-class">
-        This is a GREAT pull quote.
-      </p>
-      <a href="#">- Author</a>
-    </blockquote>
-    <p class="test-class">
-      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-      consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
-      ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-      veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
-      ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
-      qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-      qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    <h3 id="info_3">Setting up the tool</h3>
+    <p>
+      The tool primarily operates in a Google Drive environment, which uses a linux based file manager. The video shot
+      data in a separated format, along with the initial labels is available in the "/label" directory which should be
+      added to your Google Drive as a shortcut as "/content/drive/MyDrive/label" . In order to obtain the "/label"
+      directory for the data, please contact the authors as this data can only be shared upon request.
     </p>
-    <p class="test-class">
-      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-      praesentium voluptatum deleniti atque corrupti quos dolores et quas
-      molestias excepturi sint occaecati cupiditate non provident, similique sunt
-      in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-      fuga. Et harum quidem rerum facilis est et expedita distinctio.
-      <code>
-      <pre>
-    sudo ipfw pipe 1 config bw 256KByte/s
-    sudo ipfw add 1 pipe 1 src-port 3000
-  </pre>
-  </code>
 
+    <h3 id="info_4">Working with the tool</h3>
+    <p>
+      We have provided an extensive video tutorial in the following section. <i>Libraries and Preliminaries</i> section
+      needs to be run as it is with the "dev mode" checkbox is unchecked. The annotation tool identifies the annotators
+      and their work using their specific usernames, so it is recommended that the same username be used in both code
+      blocks of the <i>Settings</i> section.
     </p>
+
+    <p>
+      Finally, in the <i>Review</i> section, choose the hand side and class to annotate. This shows the shots that have
+      been initially labelled as a certain class (as chosen by the user), but requires a review to assess the quality of
+      annotation. The review section uses a command user interface to operate. The commands, their utilities and some
+      use cases have been discussed in the following list.
+    </p>
+
+    <p>
+    <ul>
+      <li><b>The Start and Stop Commands</b>(<i>st</i> and <i>stp</i>): Upon running the <i>Command Line for Review</i>
+        a text box appears as shown in the figure. In order to start the reviewing procedure, enter
+        command st and immediately a prompt appears before the next command line, as shown in the
+        next figure. The prompt "(5/27)>>>" in the figure below indicates the shot number the pointer
+        is at currently. For example if you wish to start at a specific shot number that you remember,
+        you may use that start command as: st 32 assuming you wish to start at the shot number 32
+        (Here, 32 is the argument to the command <i>st</i>). In order to stop reviewing, simply use the
+        command stp (no arguments) and press Enter.</li>
+      <li><b>The Move Pointer Command</b>(<i>mov</i>): The mov command can be used to move the pointer by
+        one shot. This command may or may not have any arguments depending on how you wish to
+        use it. This is useful if you have finished working on one shot and with to work on the next
+        shot. Simply write mov in the command line and press Enter and the prompt increments by 1
+        place. If you wish to increment the pointer place by more than one places, say 5 places, you can
+        do this by simply adding an argument to the command as: mov 5. In order to move to the
+        previous shot again, use the command mov -1.</li>
+      <li> <b>The Show GIF Command and Changing GIF frame-rate</b> (<i>show</i> and <i>fps</i>): Unlike the
+        previous tool, the review tool does not display the GIFs by default. GIFs can now be viewed by
+        entering the command show (no arguments) in the command line and pressing Enter. The
+        default frame rate of the GIFs is 5 frames per second (fps). In case you need to slow the GIFs
+        down and view them, you can do this by using the command: fps 2. This command will set the
+        fps of the GIFs to 2 frames per second. Now if you re-input the command show, you can view
+        the slowed down GIF. The argument of the fps command can be set according to you
+        requirement.</li>
+      <li> <b>The Edit Score and Edit Label Commands</b> (<i>ed_score</i> and <i>ed_label</i>): In order to edit the
+        previously assigned Confidence score that has been displayed by the show command, you can
+        edit the score using the command: ed_score 2 (if you wish to change the score to 2. Arguments
+        can only be in the range: [1,2,3] i.e. the 3-point scale of the confidence scores). In order to
+        change the assigned label of the shot, you can do it very similarly using the command: ed_label
+        4 (if you wish to change the label to class 4. Arguments can only be in the range: [1,2,3,4,5,6,7]
+        i.e. the classes in the dataset). Please note that both these commands autosaves the scores and
+        labels, but should you wish to manually save them, you may do so by simply using the
+        command: save (no arguments).</li>
+      <li> <b>The Split and Label Command</b> (<i>split_label</i>): In order to split a GIF into two or more parts and
+        specify a label for each part, you can use the split_label command. We describe the usage of
+        this command using the following use case, since the order of the arguments for this command
+        can be a little confusing. This is the only command in our tool that can accommodate multiple
+        arguments separated by a single space. Let us assume a GIF has 27 frames with the frames
+        numbered as [1,2,3…26,27], and we wish to split the frames into 3 parts: [1-8], [9-20] and [21-
+        27]. We therefore, can identify 2 split-points when such a split is made, which are at frame 8
+        and frame 20. Now, let the labels for the parts be assigned as: Class 4 for [1-8], Class 2 for [9-
+        20] and Class 5 for [21-27]. Therefore, the order in which the command arguments are placed
+        is: 'label - splitpoint - label - splitpoint - ...' so on, for as many splits required. Specifically
+        for our use case, the command can be called as: split_label 4 8 2 20 5. This command too has
+        an autosave feature as soon as you call the command. In order to view the GIF in the split
+        format, use the command: split_show and press Enter. Please note that split_show has no
+        arguments and it can only be used if a certain GIF has been split before.</li>
+    </ul>
+    </p>
+    <center><img src="./../assets/images/split_lab.PNG" height="" width="" alt="This is a random image caption.">
+    </center>
+
+    <h3 id="tut_2">Video Tutorial for using the tool</h3>
+    <p>
+      coming soon...
+    </p>
+
+
   </article>
 
 
