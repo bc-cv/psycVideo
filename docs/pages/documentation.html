@@ -106,10 +106,35 @@
     <h3 id="info_2">Creating the annotation portal</h3>
     <p>
     <ul>
-      <li>Random point 1</li>
-      <li>Random point 2</li>
-      <li>Random point 3</li>
-      <li>Random point 4</li>
+      <li>Install the ImUtil library using the following:
+        <code>
+          <pre>
+    pip install git+https://github.com/donglaiw/ImUtil.git
+          </pre>
+        </code>
+      </li>
+      <li>Import libraries as:
+        <code>
+          <pre>
+    import cv2
+    from imu.video.Basic_Shot_Detection import Shot_detect
+          </pre>
+        </code>
+      </li>
+      <li>Import libraries as:
+        <code>
+          <pre>
+    path = '/path/to/frame/directory/'
+    S = Shot_detect(path)
+    S.set_thresholds([12,130,30,22,220,120],[13,60,100,20,140,240]) #The numbers are thresholds for rough hand and
+    shadow segmentation
+    S.set_crop_indices()
+    S.extract_features()
+    S.detect_shots(0.15,0.6, showPlot=False) #setting showPlot as True displays a plot for features detected and
+    the shot separations made
+          </pre>
+        </code>
+      </li>
     </ul>
     </p>
 
